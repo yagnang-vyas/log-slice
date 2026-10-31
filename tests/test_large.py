@@ -96,6 +96,9 @@ def test_very_long_line(con: duckdb.DuckDBPyConnection, tmp_path: Path) -> None:
     assert con.execute("SELECT max(length(m)) FROM logs").fetchone() == (20 * 1024 * 1024,)
 
 
+@pytest.mark.skipif(
+    sys.platform == "win32", reason="the resource module is not available on Windows"
+)
 def test_ingest_memory_is_bounded(big_jsonl: tuple[Path, int]) -> None:
     """Peak RSS while ingesting 40 MB must stay far below what loading it all would take."""
     path, rows = big_jsonl
