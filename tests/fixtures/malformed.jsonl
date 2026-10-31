@@ -1,0 +1,8 @@
+{"time":"2026-03-01T12:00:00Z","level":"info","msg":"ok"}
+this is not json
+{"time":"2026-03-01T12:00:02Z","level":"warn","msg":"slow"}
+{"time":"2026-03-01T12:00:03Z","level":"info","msg":"ok again"}
+[1,2,3]
+{"time":"2026-03-01T12:00:05Z","level":"error","msg":"bad 42"}
+
+{"truncated": 

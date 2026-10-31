@@ -1,0 +1,40 @@
+{"timestamp": "2026-03-01T12:00:11.000Z", "level": "info", "message": "request 0 finished", "http": {"method": "GET", "path": "/api/users", "status": 200}, "duration_ms": 66.1, "req_id": "892f902b"}
+{"timestamp": "2026-03-01T12:00:15.000Z", "level": "warn", "message": "request 1 finished", "http": {"method": "GET", "path": "/api/users", "status": 200}, "duration_ms": 818.8, "req_id": "36f675cc"}
+{"timestamp": "2026-03-01T12:00:17.000Z", "level": "info", "message": "request 2 finished", "http": {"method": "GET", "path": "/healthz", "status": 200}, "duration_ms": 63.8, "req_id": "1738f7d9"}
+{"timestamp": "2026-03-01T12:00:35.000Z", "level": "info", "message": "request 3 finished", "http": {"method": "GET", "path": "/api/users", "status": 201}, "duration_ms": 852.8, "req_id": "a170b338"}
+{"timestamp": "2026-03-01T12:00:54.000Z", "level": "warn", "message": "request 4 finished", "http": {"method": "GET", "path": "/healthz", "status": 200}, "duration_ms": 45.6, "req_id": "3898d190"}
+{"timestamp": "2026-03-01T12:00:56.000Z", "level": "info", "message": "request 5 finished", "http": {"method": "GET", "path": "/api/search", "status": 404}, "duration_ms": 377.8, "req_id": "8a6a63ec"}
+{"timestamp": "2026-03-01T12:01:00.000Z", "level": "info", "message": "request 6 finished", "http": {"method": "GET", "path": "/api/orders", "status": 404}, "duration_ms": 93.6, "req_id": "923a7369"}
+{"timestamp": "2026-03-01T12:01:07.000Z", "level": "info", "message": "request 7 finished", "http": {"method": "GET", "path": "/api/users", "status": 200}, "duration_ms": 508.4, "req_id": "9e7769b1"}
+{"timestamp": "2026-03-01T12:01:14.000Z", "level": "warn", "message": "request 8 finished", "http": {"method": "GET", "path": "/healthz", "status": 201}, "duration_ms": 699.7, "req_id": "7731af10"}
+{"timestamp": "2026-03-01T12:01:33.000Z", "level": "info", "message": "request 9 finished", "http": {"method": "GET", "path": "/api/search", "status": 201}, "duration_ms": 224.3, "req_id": "2e05319a"}
+{"timestamp": "2026-03-01T12:01:41.000Z", "level": "warn", "message": "request 10 finished", "http": {"method": "GET", "path": "/api/search", "status": 200}, "duration_ms": 473.2, "req_id": "e00902c7"}
+{"timestamp": "2026-03-01T12:01:52.000Z", "level": "error", "message": "upstream failed for order 1011", "http": {"method": "GET", "path": "/healthz", "status": 500}, "duration_ms": 259.9, "req_id": "faecbd38"}
+{"timestamp": "2026-03-01T12:01:55.000Z", "level": "warn", "message": "request 12 finished", "http": {"method": "GET", "path": "/healthz", "status": 200}, "duration_ms": 149.3, "req_id": "5790f82e"}
+{"timestamp": "2026-03-01T12:02:00.000Z", "level": "info", "message": "request 13 finished", "http": {"method": "GET", "path": "/api/users", "status": 201}, "duration_ms": 865.9, "req_id": "13deef86"}
+{"timestamp": "2026-03-01T12:02:18.000Z", "level": "info", "message": "request 14 finished", "http": {"method": "GET", "path": "/api/search", "status": 404}, "duration_ms": 626.1, "req_id": "98289fcd"}
+{"timestamp": "2026-03-01T12:02:34.000Z", "level": "info", "message": "request 15 finished", "http": {"method": "GET", "path": "/api/users", "status": 404}, "duration_ms": 756.1, "req_id": "f1d69ed6"}
+{"timestamp": "2026-03-01T12:02:43.000Z", "level": "warn", "message": "request 16 finished", "http": {"method": "GET", "path": "/api/users", "status": 201}, "duration_ms": 55.5, "req_id": "b394fb36"}
+{"timestamp": "2026-03-01T12:02:53.000Z", "level": "error", "message": "upstream failed for order 1017", "http": {"method": "GET", "path": "/healthz", "status": 500}, "duration_ms": 256.9, "req_id": "62c33a4f"}
+{"timestamp": "2026-03-01T12:03:05.000Z", "level": "info", "message": "request 18 finished", "http": {"method": "GET", "path": "/api/search", "status": 200}, "duration_ms": 152.1, "req_id": "1df9fd78"}
+{"timestamp": "2026-03-01T12:03:21.000Z", "level": "info", "message": "request 19 finished", "http": {"method": "GET", "path": "/api/search", "status": 200}, "duration_ms": 117.3, "req_id": "3f63af83"}
+{"timestamp": "2026-03-01T12:03:34.000Z", "level": "info", "message": "request 20 finished", "http": {"method": "GET", "path": "/api/users", "status": 201}, "duration_ms": 150.6, "req_id": "66d22876"}
+{"timestamp": "2026-03-01T12:03:52.000Z", "level": "info", "message": "request 21 finished", "http": {"method": "GET", "path": "/healthz", "status": 200}, "duration_ms": 777.7, "req_id": "47469a4d"}
+{"timestamp": "2026-03-01T12:04:06.000Z", "level": "warn", "message": "request 22 finished", "http": {"method": "GET", "path": "/healthz", "status": 200}, "duration_ms": 862.0, "req_id": "26a2c0bd"}
+{"timestamp": "2026-03-01T12:04:09.000Z", "level": "info", "message": "request 23 finished", "http": {"method": "GET", "path": "/api/orders", "status": 200}, "duration_ms": 593.0, "req_id": "0316909e"}
+{"timestamp": "2026-03-01T12:04:25.000Z", "level": "error", "message": "upstream failed for order 1024", "http": {"method": "GET", "path": "/api/orders", "status": 503}, "duration_ms": 237.2, "req_id": "010c4759"}
+{"timestamp": "2026-03-01T12:04:30.000Z", "level": "warn", "message": "request 25 finished", "http": {"method": "GET", "path": "/api/search", "status": 201}, "duration_ms": 549.2, "req_id": "519088f5"}
+{"timestamp": "2026-03-01T12:04:35.000Z", "level": "error", "message": "upstream failed for order 1026", "http": {"method": "GET", "path": "/api/users", "status": 500}, "duration_ms": 411.5, "req_id": "def88334"}
+{"timestamp": "2026-03-01T12:04:53.000Z", "level": "info", "message": "request 27 finished", "http": {"method": "GET", "path": "/healthz", "status": 201}, "duration_ms": 355.3, "req_id": "7b45145c"}
+{"timestamp": "2026-03-01T12:05:06.000Z", "level": "info", "message": "request 28 finished", "http": {"method": "GET", "path": "/api/users", "status": 200}, "duration_ms": 886.2, "req_id": "70ccec31"}
+{"timestamp": "2026-03-01T12:05:12.000Z", "level": "info", "message": "request 29 finished", "http": {"method": "GET", "path": "/api/users", "status": 200}, "duration_ms": 93.0, "req_id": "9118bb16"}
+{"timestamp": "2026-03-01T12:05:17.000Z", "level": "info", "message": "request 30 finished", "http": {"method": "GET", "path": "/api/search", "status": 404}, "duration_ms": 552.7, "req_id": "1200339d"}
+{"timestamp": "2026-03-01T12:05:24.000Z", "level": "info", "message": "request 31 finished", "http": {"method": "GET", "path": "/api/orders", "status": 404}, "duration_ms": 571.3, "req_id": "f4998d7c"}
+{"timestamp": "2026-03-01T12:05:36.000Z", "level": "info", "message": "request 32 finished", "http": {"method": "GET", "path": "/healthz", "status": 404}, "duration_ms": 111.4, "req_id": "d953ee26"}
+{"timestamp": "2026-03-01T12:05:52.000Z", "level": "info", "message": "request 33 finished", "http": {"method": "GET", "path": "/healthz", "status": 201}, "duration_ms": 281.4, "req_id": "24e4e25a"}
+{"timestamp": "2026-03-01T12:05:56.000Z", "level": "error", "message": "upstream failed for order 1034", "http": {"method": "GET", "path": "/api/search", "status": 500}, "duration_ms": 666.6, "req_id": "7a86f7a2"}
+{"timestamp": "2026-03-01T12:06:02.000Z", "level": "info", "message": "request 35 finished", "http": {"method": "GET", "path": "/api/orders", "status": 404}, "duration_ms": 855.9, "req_id": "873be078"}
+{"timestamp": "2026-03-01T12:06:14.000Z", "level": "warn", "message": "request 36 finished", "http": {"method": "GET", "path": "/api/users", "status": 200}, "duration_ms": 682.6, "req_id": "4c4f9b06"}
+{"timestamp": "2026-03-01T12:06:17.000Z", "level": "error", "message": "upstream failed for order 1037", "http": {"method": "GET", "path": "/api/search", "status": 500}, "duration_ms": 467.0, "req_id": "e883a1d4"}
+{"timestamp": "2026-03-01T12:06:23.000Z", "level": "info", "message": "request 38 finished", "http": {"method": "GET", "path": "/api/search", "status": 200}, "duration_ms": 573.2, "req_id": "9cfc8652"}
+{"timestamp": "2026-03-01T12:06:30.000Z", "level": "error", "message": "upstream failed for order 1039", "http": {"method": "GET", "path": "/api/orders", "status": 503}, "duration_ms": 736.7, "req_id": "bd685167"}
