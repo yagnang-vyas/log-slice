@@ -1,0 +1,82 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "logslice"
+dynamic = ["version"]
+description = "Query messy log files with SQL in seconds: auto-detects formats, infers schemas, loads into DuckDB."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Yagnang Vyas", email = "168338381+yagnang-vyas@users.noreply.github.com" }]
+maintainers = [{ name = "Yagnang Vyas", email = "168338381+yagnang-vyas@users.noreply.github.com" }]
+keywords = ["logs", "log-analysis", "duckdb", "sql", "cli", "observability", "sre"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Logging",
+    "Typing :: Typed",
+]
+dependencies = ["duckdb>=1.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.10", "build>=1.2"]
+
+[project.urls]
+Homepage = "https://github.com/yagnang-vyas/log-slice"
+Repository = "https://github.com/yagnang-vyas/log-slice"
+Issues = "https://github.com/yagnang-vyas/log-slice/issues"
+
+[project.scripts]
+logslice = "logslice.cli:main"
+
+[tool.hatch.version]
+path = "src/logslice/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/logslice"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "docs", "examples", "README.md", "LICENSE", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = ["slow: tests that generate and ingest large files"]
+
+[tool.coverage.run]
+source = ["logslice"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = ["pragma: no cover", "if __name__ == .__main__.:"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "C4", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["duckdb", "duckdb.*"]
+ignore_missing_imports = true
+
+[tool.ruff.lint.isort]
+known-first-party = ["logslice"]
+known-local-folder = ["conftest"]
